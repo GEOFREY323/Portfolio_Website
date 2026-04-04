@@ -38,7 +38,7 @@ type();
 document.getElementById("contact-form").addEventListener("submit", function(e) {
   e.preventDefault();
 
-  emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+  emailjs.send("service_7ungz1z", "template_4idq45c", {
     from_name: document.getElementById("name").value,
     from_email: document.getElementById("email").value,
     message: document.getElementById("message").value
@@ -47,3 +47,22 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
     alert("Message sent successfully!");
   });
 });
+
+
+function nextSlide(btn) {
+  const slides = btn.parentElement.querySelectorAll(".slide");
+  let index = [...slides].findIndex(s => s.classList.contains("active"));
+
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}
+
+function prevSlide(btn) {
+  const slides = btn.parentElement.querySelectorAll(".slide");
+  let index = [...slides].findIndex(s => s.classList.contains("active"));
+
+  slides[index].classList.remove("active");
+  index = (index - 1 + slides.length) % slides.length;
+  slides[index].classList.add("active");
+}

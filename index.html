@@ -70,9 +70,24 @@
   <div class="grid">
 
     <div class="card">
-      <img src="images/traitzhire.png" alt=" ">
-      <h3>TraitzHire</h3>
+      <div class="slider">
 
+        <img src="images/traitzhire.png" alt="TraitzHire" class="slide active">
+        <img src="images/traitzhire1.jpg" alt="TraitzHire" class="slide">
+        <img src="images/traitzhire2.jpg" alt="TraitzHire" class="slide">
+        <img src="images/traitzhire3.jpg" alt="TraitzHire" class="slide">
+        <img src="images/traitzhire4.jpg" alt="TraitzHire" class="slide">
+        <img src="images/traitzhire5.jpg" alt="TraitzHire" class="slide">
+        <img src="images/traitzhire6.jpg" alt="TraitzHire" class="slide">
+        <img src="images/traitzhire7.jpg" alt="TraitzHire" class="slide">
+        <img src="images/traitzhire8.jpg" alt="TraitzHire" class="slide">
+        <img src="images/traitzhire9.jpg" alt="TraitzHire" class="slide">
+
+      </div>
+      <button type="button" onclick="prevSlide(this)">⬅</button>
+      <button type="button" onclick="nextSlide(this)">➡</button>
+
+      <h3>TraitzHire</h3>
       <p>Smart job matching platform.</p>
 
       <p><strong>Tech:</strong> Django, AI</p>
@@ -143,7 +158,7 @@
   <form id="contact-form">
     <input type="text" id="name" placeholder="Your Name" required><br><br>
     <input type="email" id="email" placeholder="Your Email" required><br><br>
-    <textarea id="message" placeholder="Your Message" required></textarea><br><br>
+    <textarea id="message" name="Message" placeholder="Your Message" required></textarea><br><br>
 
     <button type="submit" class="btn">Send Message</button>
   </form>
@@ -158,7 +173,7 @@
 <!-- EMAILJS -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
-  emailjs.init("YOUR_PUBLIC_KEY");
+  emailjs.init("WeFid1ehoyDC3NXkS");
 </script>
 
 <script src="js/script.js"></script>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gam Geofrey Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Gam Geofrey Portfolio - Software Developer, AI & Data Science">
+  <meta name="keywords" content="developer, AI, portfolio, web developer">
+  <meta name="author" content="Gam Geofrey">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>Gam Geofrey Ankinimbom</h2>
+
+  <ul id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div id="menu" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="images/profile.jpg" class="profile-img" alt="">
+
+  <h1>Hi, I'm <span class="highlight">Gam Geofrey Ankinimbom</span></h1>
+  <p id="typing"></p>
+
+  <a href="#projects" class="btn">View Projects</a>
+  <a href="cv/Gam_Geofrey_CV.pdf" class="btn-outline" download>Download CV</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>I am passionate about transforming data into meaningful insights and building intelligent systems that solve real-world problems.</p><br>
+  <p>I am an aspiring data scientist and a python developer with a growing interest in using data, machine learning and backend technologies to create impactful solutions. Currently an undergraduate, i have focused on developing practical skills through hands-on learning, internships, events, and personal projects that apply data-driven thinking to real scenarios</p><br>
+  <p>My core expertise lies in python for data analysis, where i work with tools such as pandas, NumPy, and visualization libraries to explore datasets, identify patterns, and communicate insights effectively. I also build machine learning models for predictive analysis and have foundational knowledge of deep learning concepts.</p><br>
+  <p>To strengthen my ability to develop complete data-driven applications, I am also building backend systems using Django. This allows me to intergrate machine learning models, Data pipelines, and web applications into funtional platforms that deliver intelligent and scalable solutions.</p><br>
+  <h3>Core skills and technoloies</h3>
+  <p>
+  *Python.<br>
+  *Data Analysis and Data Cleaning<br>
+  *Data Visualization<br>
+  *Machine Learning<br>
+  *Basic Deep Learning<br>
+  *Backend Development with Django<br>
+  *Analytical thinking and Problem solving
+  </p><br>
+  <p>Through internships and personal projects, I have gained hands-on experience working with real datasets, strengthening my ability to translate complex data into actionable insights and build practical solutions.</p><br>
+  <p>I am currently seeking entry-level opportunities, internships, or collaborative projects in Data science, Data Analysis, Machine Learning or Python Backend Development, Where i can continue learning, contribute to meaningful projects, and grow as a technology professional.</p><br>
+  <p>I enjoy connecting with professionals in data, artificial inteligence, and software development. feel free to reach out if you'd like to collaborate, share knowledge, or discuss opportunities</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="images/traitzhire.png" alt=" ">
+      <h3>TraitzHire</h3>
+
+      <p>Smart job matching platform.</p>
+
+      <p><strong>Tech:</strong> Django, AI</p>
+
+      <a href="https://traitzhire-project-production.up.railway.app/" target="_blank" class="btn">Live Demo</a>
+      <a href="https://github.com/GEOFREY323/TraitzHire-Project" target="_blank" class="btn-outline">GitHub</a>
+
+      <p><strong>Impact:</strong> Helps users make better decisions / improves efficiency.</p>
+    </div>
+
+
+    <div class="card">
+      <img src="images/connecthub.png" alt="">
+      <h3>ConnectHub</h3>
+
+      <p>Professional networking platform connecting people and opportunities.</p>
+
+      <p><strong>Tech:</strong> Django, JavaScript</p>
+
+      <a href="https://connecthub-project-production-d31e.up.railway.app/" target="_blank" class="btn">Live Demo</a>
+      <a href="https://github.com/GEOFREY323/ConnectHub-Project" target="_blank" class="btn-outline">GitHub</a>
+
+      <p><strong>Impact:</strong> Helps users make better decisions / improves efficiency.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/tomato-ai.png" alt="">
+      <h3>Tomato Disease Detection</h3>
+
+      <p>AI system for plant disease detection.</p>
+
+      <p><strong>Tech:</strong> Django, AI</p>
+
+      <a href="https://github.com/GEOFREY323/Tomato-disesase-detection-model" target="_blank" class="btn">GitHub</a>
+
+      <p><strong>Impact:</strong> Helps users make better decisions / improves efficiency.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/Student_score.png" alt="">
+      <h3>Student Score Predictor</h3>
+      <p>ML model for predicting student performance.</p>
+      <a href="https://github.com/GEOFREY323/Student-score-prediction-model" target="_blank" class="btn">GitHub</a>
+
+      <p><strong>Impact:</strong> Helps users make better decisions / improves efficiency.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+  <h2>Services</h2>
+
+  <div class="grid">
+    <div class="card">Web Development</div>
+    <div class="card">AI Solutions</div>
+    <div class="card">Data Science</div>
+    <div class="card">Data Analysis</div>
+    <div class="card">Backend Development</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+
+  <form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required><br><br>
+    <input type="email" id="email" placeholder="Your Email" required><br><br>
+    <textarea id="message" placeholder="Your Message" required></textarea><br><br>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <div class="social">
+    <a href="https://www.linkedin.com/in/gam-geofrey-ankinimbom-b11868337/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/GEOFREY323" target="_blank">GitHub</a>
+    <a href="https://www.facebook.com/geofrey.gam.7" target="_blank">Facebook</a>
+  </div>
+</section>
+
+<!-- EMAILJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("YOUR_PUBLIC_KEY");
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

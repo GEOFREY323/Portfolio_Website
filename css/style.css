@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  position: fixed;
+  width: 100%;
+  background: #020617;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.profile-img {
+  width: 120px;
+  border-radius: 40%;
+}
+
+.highlight {
+  color: #38bdf8;
+}
+
+.btn {
+  background: #38bdf8;
+  padding: 10px 20px;
+  margin: 10px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 1px solid #38bdf8;
+  padding: 10px 20px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.section {
+  padding: 80px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.social a {
+  margin: 10px;
+  color: #38bdf8;
+}
+
+#menu {
+  display: none;
+}
+
+@media(max-width:768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  #menu {
+    display: block;
+  }
+}
